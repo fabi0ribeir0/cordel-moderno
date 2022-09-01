@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+/* font-family: 'Passion One', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Passion+One&display=swap');
+/* font-family: 'Kaushan Script', cursive; */
+
+@font-face {
+    font-family: meulogo;
+    src: url('../fontes/comforter-regular.ttf') format('truetype');
+}
+
+
+:root {
+    --fonte1: verdana, tahoma, sans-serif;
+    --fonte2: 'Passion One';
+    --fonte3: 'Kaushan Script', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: lightgreen;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.9vw;
+    font-weight: 600;
+}
+
+section > p {
+    padding-bottom: 3em;
+}
+
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgba(32, 32, 32, 0);
+    color: white;
+    box-shadow: inset 1px 1px 18px 9px #000000b0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display: inline-block;
+    background-color: rgba(17, 17, 17, 0.658);
+    padding: 10px 15px;
+    border-radius: 15px;
+    text-shadow: 2px 2px 2px black;
+}
+
+#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: center center;
+}
+
+#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: lightskyblue;
+}
+
+.meulogo {
+    font-family: meulogo, monospace;
+    font-size: 1.5em;
+    font-weight: 100;
+}
